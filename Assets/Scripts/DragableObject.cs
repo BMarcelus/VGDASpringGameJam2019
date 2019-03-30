@@ -21,7 +21,7 @@ public class DragableObject : MonoBehaviour
         collider2d = GetComponent<Collider2D>();
         gameObject.layer = 9;
         startDrag = false;
-        transform.localScale /= (1+scale)/2;
+        transform.localScale /= scale;
         // transform.localScale *= 0.5f;
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         shop = GameObject.Find("Shop").GetComponent<Shop>();
