@@ -14,6 +14,8 @@
           <e p="CollideCount.cs" t="Include" />
           <e p="DebugManager.cs" t="Include" />
           <e p="DragableObject.cs" t="Include" />
+          <e p="FadeAndDestroy.cs" t="Include" />
+          <e p="GridEffectsManager.cs" t="Include" />
           <e p="HoverEffect.cs" t="Include" />
           <e p="MainMenuToGameButton.cs" t="Include" />
           <e p="Manager.cs" t="Include" />

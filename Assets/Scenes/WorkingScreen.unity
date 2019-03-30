@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 302928682}
   - component: {fileID: 302928681}
   - component: {fileID: 302928680}
+  - component: {fileID: 302928683}
   m_Layer: 5
   m_Name: Submit
   m_TagString: Untagged
@@ -427,6 +428,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302928678}
   m_CullTransparentMesh: 0
+--- !u!114 &302928683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302928678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 743375482}
+          m_MethodName: PlaySound
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: HoverSound
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &315874577
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +658,7 @@ GameObject:
   - component: {fileID: 365730246}
   - component: {fileID: 365730245}
   - component: {fileID: 365730248}
+  - component: {fileID: 365730249}
   m_Layer: 5
   m_Name: Menu Button
   m_TagString: Untagged
@@ -755,6 +788,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 509b5f369089aa54e8e5f4389d11566f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &365730249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365730243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 743375482}
+          m_MethodName: PlaySound
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: HoverSound
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &390563322
 GameObject:
   m_ObjectHideFlags: 0
@@ -932,7 +996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.28979588}
+  m_AnchoredPosition: {x: 0, y: 59.960907}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &552396004
@@ -1147,7 +1211,7 @@ PrefabInstance:
     - target: {fileID: 542327867470675836, guid: f92cbf4abe4762d41b576f0a2597f2e2,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8291895194076094673, guid: f92cbf4abe4762d41b576f0a2597f2e2,
         type: 3}
@@ -1206,6 +1270,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f92cbf4abe4762d41b576f0a2597f2e2, type: 3}
+--- !u!114 &743375482 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1727953005342681094, guid: f92cbf4abe4762d41b576f0a2597f2e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 743375481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e765061bb387904ea3e9292dfb3e3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &906064000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1396,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 47722042}
   m_HandleRect: {fileID: 47722041}
   m_Direction: 2
-  m_Value: 0.99633634
+  m_Value: 0.24196097
   m_Size: 0.7363333
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2128,6 +2204,7 @@ GameObject:
   - component: {fileID: 1830371477}
   - component: {fileID: 1830371476}
   - component: {fileID: 1830371479}
+  - component: {fileID: 1830371480}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -2257,6 +2334,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddbe66e1ba5e26644b1072addf2fbd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1830371480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830371474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 743375482}
+          m_MethodName: PlaySound
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: HoverSound
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1897381529
 GameObject:
   m_ObjectHideFlags: 0
