@@ -37,7 +37,7 @@ public class Manager : MonoBehaviour
         if(text)
         text.text = "Percent " + percent.ToString("#.00");
     }
-  
-         
+
+    
 
 }
