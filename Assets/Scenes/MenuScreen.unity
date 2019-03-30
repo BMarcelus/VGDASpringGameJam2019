@@ -272,9 +272,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1727953005342681094}
-          m_MethodName: PlaySound
-          m_Mode: 5
+        - m_Target: {fileID: 738442206}
+          m_MethodName: HoverSound
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -502,9 +502,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1727953005342681094}
-          m_MethodName: PlaySound
-          m_Mode: 5
+        - m_Target: {fileID: 738442206}
+          m_MethodName: HoverSound
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -519,9 +519,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1727953005342681094}
-          m_MethodName: PlaySound
-          m_Mode: 5
+        - m_Target: {fileID: 738442206}
+          m_MethodName: UIClick
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1406,9 +1406,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1727953005342681094}
-          m_MethodName: PlaySound
-          m_Mode: 5
+        - m_Target: {fileID: 738442206}
+          m_MethodName: UIClick
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1423,9 +1423,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1727953005342681094}
-          m_MethodName: PlaySound
-          m_Mode: 5
+        - m_Target: {fileID: 738442206}
+          m_MethodName: HoverSound
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1688,15 +1688,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f92cbf4abe4762d41b576f0a2597f2e2, type: 3}
---- !u!114 &1727953005342681094 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1727953005342681094, guid: f92cbf4abe4762d41b576f0a2597f2e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 183435887686188736}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e765061bb387904ea3e9292dfb3e3fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

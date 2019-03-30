@@ -74,7 +74,7 @@ MonoBehaviour:
     loop: 0
   - name: LevelComplete
     clip: {fileID: 8300000, guid: 6634a7e404283b34aa298cbd25a5a578, type: 3}
-    volume: 0.3
+    volume: 0.8
     tempo: 1
     RandomVolume: 0
     RandomTempo: 0

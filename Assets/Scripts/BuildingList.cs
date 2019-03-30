@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BuildingList : MonoBehaviour
 {
-    public MoneyIncome currencyPerSecond;
+    public MoneyManager moneyManager;
     public GameObject builtbuilding;
     public GameObject spawnedShapes;
     public Manager manager;
@@ -12,7 +12,6 @@ public class BuildingList : MonoBehaviour
     public List<float> BuiltPercent = new List<float>();
     public List<float> persecond = new List<float>();
     // float realpersecond = (actualPositive / targetPositive - falsePositive)
-
     public void OnButtonClick()
     {
         //  BuiltPercent.Add(percent);
@@ -20,18 +19,30 @@ public class BuildingList : MonoBehaviour
         float fillPercent = manager.getFilledPercent();
         Debug.Log(fillPercent);
         float overflowPercent = manager.getOverflowPercent();
-        Debug.Log(overflowPercent);
-        //
-        Debug.Log(spawnedShapes.transform.childCount);
+        Debug.Log("this is the % you got correct");
 
-        float currencyPerSecond = ((fillPercent * 150) - ((overflowPercent * 100) + spawnedShapes.transform.childCount / 4) / 10);
+        Debug.Log(overflowPercent);
+        Debug.Log("this is out of bounds shapes");
+
+        Debug.Log(spawnedShapes.transform.childCount);
+        Debug.Log("this is the shapes you used");
+        //float currencyPerSecond = (spawnedShapes.transform.childCount);
+        float currencyPerSecond = (fillPercent * (fillPercent * 105)) - ((overflowPercent * spawnedShapes.transform.childCount));
         Debug.Log(currencyPerSecond);
         Debug.Log("this is the money you make per second");
-        // BuiltPercent.Add()
-        Instantiate(builtbuilding);
-        Debug.Log("this is an attempt to spawn");
+        spawn(currencyPerSecond); 
+   
         
+       
+
 
     }
-
-}
+    public void spawn(float currencyPerSecond)
+    {
+        GameObject building = Instantiate(builtbuilding);
+        MoneyIncome moneyScript = building.GetComponent<MoneyIncome>();
+        moneyScript.moneyManager = moneyManager;
+        moneyScript.currencyPerSecond = currencyPerSecond;
+        Debug.Log(moneyManager);
+    }
+}   

@@ -17,6 +17,10 @@ public class CreditsToMainMenu : MonoBehaviour
     string inGame = "Ingame";
     [SerializeField]
     string credits = "Credits";
+    [SerializeField]
+    string levelcomplete = "LevelComplete";
+    [SerializeField]
+    string itemplaced = "ItemPlaced"; 
     
     void Start()
     {
@@ -52,5 +56,15 @@ public class CreditsToMainMenu : MonoBehaviour
     public void Credits()
     {
         audioManager.PlaySound(credits);
+    }
+
+    public void LevelComplete()
+    {
+        audioManager.PlaySound(levelcomplete);
+    }
+
+    public void ItemPlaced()
+    {
+        audioManager.PlaySound(itemplaced);
     }
 }
