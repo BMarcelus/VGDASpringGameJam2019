@@ -7,16 +7,7 @@ public class GetDataFromObject : MonoBehaviour
  
     public Manager percent;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     //not void because it is trying to return a real value
     public void OnButtonClick()
     {
