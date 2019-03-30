@@ -9,9 +9,6 @@ public class Manager : MonoBehaviour
     public float percent;
     private ShapeColliders shapeColliders;
     public Text text;
-    public int targetPositives;
-    public int actualPositives;
-    public int falsePositives;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +19,7 @@ public class Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
     }
 
     public void AddCollide()
@@ -40,11 +38,6 @@ public class Manager : MonoBehaviour
         text.text = "Percent " + percent.ToString("#.00");
     }
 
-    public float getFilledPercent() {
-      return 1f * actualPositives / targetPositives;
-    }
+    
 
-    public float getOverflowPercent() {
-      return 1f * falsePositives / (shapeColliders.prefabsCount - targetPositives);
-    }
 }
