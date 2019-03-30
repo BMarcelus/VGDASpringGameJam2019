@@ -13,12 +13,6 @@ public class MoneyDisplay : MonoBehaviour
         money.text = ("Currency: $" + manager.money);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void MoneyUpdate()
     {
         money.text = ("Currency: $" + manager.money);
