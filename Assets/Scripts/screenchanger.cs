@@ -5,7 +5,7 @@ public class screenchanger: MonoBehaviour
 {
     public void ChangScreen()
     {
-        SceneManager.LoadScene("ScreenSwitchTest",LoadSceneMode.Single);
+        SceneManager.LoadScene("WorkingScreen",LoadSceneMode.Single);
 
     }
 }

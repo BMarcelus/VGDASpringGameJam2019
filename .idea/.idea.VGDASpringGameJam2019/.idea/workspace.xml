@@ -26,29 +26,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/screenchanger.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="112">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
               <folding>
-                <marker date="1553927448393" expanded="true" signature="6:53" ph="..." />
-                <marker date="1553927448393" expanded="true" signature="96:216" ph="{...}" />
-                <marker date="1553927448393" expanded="true" signature="128:214" ph="{...}" />
+                <marker date="1553934548348" expanded="true" signature="6:53" ph="..." />
+                <marker date="1553934548348" expanded="true" signature="96:213" ph="{...}" />
+                <marker date="1553934548348" expanded="true" signature="128:211" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ReturnScreen.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <marker date="1553928525472" expanded="true" signature="6:53" ph="..." />
                 <marker date="1553928525472" expanded="true" signature="95:212" ph="{...}" />
                 <marker date="1553928525472" expanded="true" signature="130:210" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <marker date="1553930193286" expanded="true" signature="6:78" ph="..." />
+                <marker date="1553930193286" expanded="true" signature="120:248" ph="{...}" />
+                <marker date="1553930193286" expanded="true" signature="181:246" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -60,8 +74,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CloseButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/screenchanger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReturnScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuToGameButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -69,8 +85,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/screenchanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuToGameButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/screenchanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReturnScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CloseButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/screenchanger.cs" />
       </list>
     </option>
   </component>
@@ -123,12 +140,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553922178740</updated>
       <workItem from="1553922226020" duration="3028000" />
-      <workItem from="1553925788250" duration="2980000" />
+      <workItem from="1553925788250" duration="5340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6008000" />
+    <option name="totallyTimeSpent" value="8368000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -201,14 +218,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/screenchanger.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="-1364">
           <folding>
-            <marker date="1553927448393" expanded="true" signature="6:53" ph="..." />
-            <marker date="1553927448393" expanded="true" signature="96:216" ph="{...}" />
-            <marker date="1553927448393" expanded="true" signature="128:214" ph="{...}" />
+            <marker date="1553929054255" expanded="false" signature="6:43" ph="..." />
+            <marker date="1553929054255" expanded="true" signature="134:1605" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="903:1079" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="1103:1516" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="1540:1603" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="1648:3900" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="1878:2368" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="1942:2231" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="2122:2221" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="2244:2362" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="2386:2921" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="2520:2886" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="2962:3287" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="3061:3281" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="3112:3271" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="3328:3898" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="3427:3647" ph="{...}" />
+            <marker date="1553929054255" expanded="true" signature="3478:3637" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <marker date="1553930193286" expanded="true" signature="6:78" ph="..." />
+            <marker date="1553930193286" expanded="true" signature="120:248" ph="{...}" />
+            <marker date="1553930193286" expanded="true" signature="181:246" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -216,11 +259,23 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ReturnScreen.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <marker date="1553928525472" expanded="true" signature="6:53" ph="..." />
             <marker date="1553928525472" expanded="true" signature="95:212" ph="{...}" />
             <marker date="1553928525472" expanded="true" signature="130:210" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/screenchanger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <marker date="1553934548348" expanded="true" signature="6:53" ph="..." />
+            <marker date="1553934548348" expanded="true" signature="96:213" ph="{...}" />
+            <marker date="1553934548348" expanded="true" signature="128:211" ph="{...}" />
           </folding>
         </state>
       </provider>
