@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
-    public int money;
+    public float money;
+    public float complete;
+    public float add;
     public int triangle;
     public int square;
     public int polygon;
+    public MoneyDisplay display;
     AudioManager audioManager;
     
     private void Awake()
@@ -18,12 +21,15 @@ public class MoneyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        money += complete / 10;
+        display.MoneyUpdate();
     }
 
     public void AddMoney()
     {
-        money += 1000;
+        complete += add;
+        money.ToString("F2");
+        display.MoneyUpdate();
     }
 
     public void BuySquare()
@@ -32,6 +38,7 @@ public class MoneyManager : MonoBehaviour
         {
             money -= square;
             audioManager.PlaySound("Purchase");
+            display.MoneyUpdate();
         }
     }
 
@@ -41,6 +48,7 @@ public class MoneyManager : MonoBehaviour
         {
             money -= triangle;
             audioManager.PlaySound("Purchase");
+            display.MoneyUpdate();
         }
     }
 
@@ -50,6 +58,7 @@ public class MoneyManager : MonoBehaviour
         {
             money -= polygon;
             audioManager.PlaySound("Purchase");
+            display.MoneyUpdate();
         }
     }
 }

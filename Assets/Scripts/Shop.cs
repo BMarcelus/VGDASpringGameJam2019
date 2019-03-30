@@ -5,7 +5,6 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     public MoneyManager money;
-    public MoneyDisplay display;
     AudioManager audioManager;
 
     private void Awake()
@@ -15,34 +14,18 @@ public class Shop : MonoBehaviour
     public void AddMoney()
     {
         money.AddMoney();
-        if (display != null)
-        {
-            display.MoneyUpdate();
-        }
     }
 
     public void BuySquare()
     {
         money.BuySquare();
-        if (display != null)
-        {
-            display.MoneyUpdate();
-        }
     }
     public void BuyTriangle()
     {
         money.BuyTriangle();
-        if (display != null)
-        {
-            display.MoneyUpdate();
-        }
     }
     public void BuyPolygon()
     {
         money.BuyPolygon();
-        if (display != null)
-        {
-            display.MoneyUpdate();
-        }
     }
 }
