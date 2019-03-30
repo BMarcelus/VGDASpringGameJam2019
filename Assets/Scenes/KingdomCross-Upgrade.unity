@@ -1123,30 +1123,6 @@ PolygonCollider2D:
       - {x: -0.145, y: -3.4499998}
       - {x: -0.325, y: -3.52}
       - {x: -0.585, y: -3.59}
---- !u!114 &545163628 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 545163628, guid: f92cbf4abe4762d41b576f0a2597f2e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 677110644}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c614c6dd2b15154a9f321d20d7bdeef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &545163631 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 545163631, guid: f92cbf4abe4762d41b576f0a2597f2e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 677110644}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0a1c476d80d1c04eb26d16b382091e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &592770776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,11 +1583,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
         type: 3}
-      propertyPath: money
-      value: 
-      objectReference: {fileID: 545163628}
-    - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
-        type: 3}
       propertyPath: SpawnerBuy1
       value: 
       objectReference: {fileID: 1942312207}
@@ -1625,20 +1596,11 @@ PrefabInstance:
       propertyPath: SpawnerBuy3
       value: 
       objectReference: {fileID: 197402280}
-    - target: {fileID: 3268756029520164645, guid: fff722c089e2b3348be8b3c7e29d5c0d,
-        type: 3}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 545163628}
     - target: {fileID: 3268756028712537709, guid: fff722c089e2b3348be8b3c7e29d5c0d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1365745512}
-    - target: {fileID: 1681003566, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: upgradeManager
-      value: 
-      objectReference: {fileID: 545163631}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
 --- !u!1 &886927296
@@ -4785,7 +4747,7 @@ PrefabInstance:
         type: 3}
       propertyPath: moneyManager
       value: 
-      objectReference: {fileID: 545163628}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a464192646ea746ae5c0b9a11be903, type: 3}
 --- !u!1001 &8469061304276711889

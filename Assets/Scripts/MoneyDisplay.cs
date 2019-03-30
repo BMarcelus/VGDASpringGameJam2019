@@ -10,11 +10,11 @@ public class MoneyDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        money.text = ("Currency: $" + manager.money);
+        money.text = ("$" + manager.money);
     }
 
     public void MoneyUpdate()
     {
-        money.text = ("Currency: $" + manager.money);
+        money.text = ("$" + manager.money);
     }
 }
