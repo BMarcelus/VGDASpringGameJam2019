@@ -10,11 +10,13 @@ public class DragableObject : MonoBehaviour
     private bool inGrid = false;
     private Collider2D collider2d;
     private Vector3 startPosition;
+    private bool startDrag;
     // Start is called before the first frame update
     void Start()
     {
         collider2d = GetComponent<Collider2D>();
         gameObject.layer = 9;
+        startDrag = false;
         // transform.localScale *= 0.5f;
     }
 
@@ -29,6 +31,10 @@ public class DragableObject : MonoBehaviour
 
           float rotationInput = -Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100f;
           transform.Rotate(new Vector3(0,0,rotationInput));
+          if(Input.GetMouseButtonDown(0)&&!startDrag) {
+            OnMouseDown();
+          }
+          startDrag = false;
         }
     }
 
@@ -41,6 +47,7 @@ public class DragableObject : MonoBehaviour
     public void StartDragging() {
       startPosition = transform.position;
       beingDragged = true;
+      startDrag = true;
       // transform.localScale *= 2;
 
     }
@@ -56,6 +63,8 @@ public class DragableObject : MonoBehaviour
         mySpawner.Spawn();
         // collider2d.enabled = false;
         gameObject.layer = 0;
+        GameObject effect = Instantiate(mySpawner.typeManager.PlaceEffect, transform.position, Quaternion.identity);
+        Destroy(effect,2);
         transform.position += Vector3.forward*2;
         this.enabled = false;
       }
