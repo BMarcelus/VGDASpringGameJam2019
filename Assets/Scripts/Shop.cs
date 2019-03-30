@@ -23,9 +23,14 @@ public class Shop : MonoBehaviour
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
+    private void Update()
+    {
+        money.money += Time.deltaTime*complete / 100;
+    }
+
     public void AddMoney()
     {
-        money.AddMoney();
+        complete += add;
     }
 
     public void BuySquare()
@@ -37,7 +42,6 @@ public class Shop : MonoBehaviour
             SpawnerBuy2.SetActive(true);
             PurchaseSquare();
         }
-        money.BuySquare();
     }
     public void BuyTriangle()
     {
@@ -48,7 +52,6 @@ public class Shop : MonoBehaviour
             SpawnerBuy1.SetActive(true);
             PurchaseTriangle();
         }
-        money.BuyTriangle();
     }
     public void BuyPolygon()
     {
@@ -59,7 +62,6 @@ public class Shop : MonoBehaviour
             SpawnerBuy3.SetActive(true);
             PurchasePolygon();
         }
-        money.BuyPolygon();
     }
 
     public void PurchaseTriangle()
