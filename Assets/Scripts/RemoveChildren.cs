@@ -15,9 +15,11 @@ public class RemoveChildren : MonoBehaviour
     // Update is called once per frame
     public void OnButtonClick()
     {
-
+        
         foreach (Transform child in other.transform)
+
         {
+           
             GameObject.Destroy(child.gameObject);
         }
     }
