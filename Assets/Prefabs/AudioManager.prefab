@@ -105,5 +105,5 @@ MonoBehaviour:
     volume: 0.2
     tempo: 1
     RandomVolume: 0
-    RandomTempo: 0.25
+    RandomTempo: 0
     loop: 1
