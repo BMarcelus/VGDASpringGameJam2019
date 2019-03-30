@@ -1108,15 +1108,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3.92
       objectReference: {fileID: 0}
-    - target: {fileID: 6922523374252163933, guid: e5a9e3ef38b6245e4859c628d676022a,
+    - target: {fileID: 2522524570492961239, guid: e5a9e3ef38b6245e4859c628d676022a,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.48
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6922523374252163933, guid: e5a9e3ef38b6245e4859c628d676022a,
+    - target: {fileID: 2522524570619068425, guid: e5a9e3ef38b6245e4859c628d676022a,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.91
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1191793406, guid: e5a9e3ef38b6245e4859c628d676022a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1149,6 +1149,16 @@ PrefabInstance:
     - target: {fileID: 1421982916, guid: e5a9e3ef38b6245e4859c628d676022a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922523374252163933, guid: e5a9e3ef38b6245e4859c628d676022a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922523374252163933, guid: e5a9e3ef38b6245e4859c628d676022a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.91
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5a9e3ef38b6245e4859c628d676022a, type: 3}
@@ -1310,6 +1320,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243162865}
   m_CullTransparentMesh: 0
+--- !u!1 &1312695764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2522524570619068425, guid: e5a9e3ef38b6245e4859c628d676022a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177861706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1368136857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2522524570492961239, guid: e5a9e3ef38b6245e4859c628d676022a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177861706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1379350912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,11 +1836,31 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3268756029520164666, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268756029520164666, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
         type: 3}
       propertyPath: money
       value: 
       objectReference: {fileID: 1547771900}
+    - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: SpawnerBuy1
+      value: 
+      objectReference: {fileID: 1368136857}
+    - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: SpawnerBuy2
+      value: 
+      objectReference: {fileID: 1312695764}
     - target: {fileID: 3268756029520164645, guid: fff722c089e2b3348be8b3c7e29d5c0d,
         type: 3}
       propertyPath: manager
@@ -1943,6 +1985,10 @@ PrefabInstance:
       propertyPath: upgradeManager
       value: 
       objectReference: {fileID: 1547771903}
+    - target: {fileID: 1180840880, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2088747574, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
@@ -1971,26 +2017,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 110
       objectReference: {fileID: 0}
-    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 49
-      objectReference: {fileID: 0}
-    - target: {fileID: 1180840880, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1699812956, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1322423475, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1125314145, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -2018,6 +2044,22 @@ PrefabInstance:
     - target: {fileID: 1125314145, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322423475, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699812956, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
