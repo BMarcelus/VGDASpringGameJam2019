@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8291895194076094673}
   - component: {fileID: 1727953005342681094}
-  - component: {fileID: 545163628}
-  - component: {fileID: 545163631}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -102,32 +100,10 @@ MonoBehaviour:
     RandomVolume: 0
     RandomTempo: 0
     loop: 1
---- !u!114 &545163628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542327867470675836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c614c6dd2b15154a9f321d20d7bdeef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  money: 0
-  display: {fileID: 0}
---- !u!114 &545163631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542327867470675836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0a1c476d80d1c04eb26d16b382091e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  click: 1
-  cost: 500
-  costMultiply: 2
+  - name: Ingame
+    clip: {fileID: 8300000, guid: da8e192a6f78d3f4ebceaadc797c96c5, type: 3}
+    volume: 0.2
+    tempo: 1
+    RandomVolume: 0
+    RandomTempo: 0
+    loop: 1
