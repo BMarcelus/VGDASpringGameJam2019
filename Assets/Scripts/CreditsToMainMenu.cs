@@ -11,7 +11,13 @@ public class CreditsToMainMenu : MonoBehaviour
     string hoverSound = "HoverSound";
     [SerializeField]
     string uIClick = "UIClick";
-
+    [SerializeField]
+    string music = "Music";
+    [SerializeField]
+    string inGame = "Ingame";
+    [SerializeField]
+    string credits = "Credits";
+    
     void Start()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
@@ -19,6 +25,7 @@ public class CreditsToMainMenu : MonoBehaviour
 
     public void accessCredits()
     {
+        audioManager.StopSound("Music");
         SceneManager.LoadScene("CreditsScene",LoadSceneMode.Single);
     }
 
@@ -30,5 +37,20 @@ public class CreditsToMainMenu : MonoBehaviour
     public void UIClick()
     {
         audioManager.PlaySound(uIClick);
+    }
+
+    public void Music()
+    {
+        audioManager.PlaySound(music);
+    }
+
+    public void Ingame()
+    {
+        audioManager.StopSound(inGame);
+    }
+
+    public void Credits()
+    {
+        audioManager.PlaySound(credits);
     }
 }
