@@ -34,31 +34,16 @@ public class MoneyManager : MonoBehaviour
 
     public void BuySquare()
     {
-        if(money >= square)
-        {
-            money -= square;
-            audioManager.PlaySound("Purchase");
-            display.MoneyUpdate();
-        }
+        display.MoneyUpdate();
     }
 
     public void BuyTriangle()
     {
-        if(money >= triangle)
-        {
-            money -= triangle;
-            audioManager.PlaySound("Purchase");
-            display.MoneyUpdate();
-        }
+        display.MoneyUpdate();
     }
 
     public void BuyPolygon()
     {
-        if(money >= polygon)
-        {
-            money -= polygon;
-            audioManager.PlaySound("Purchase");
-            display.MoneyUpdate();
-        }
+        display.MoneyUpdate();
     }
 }

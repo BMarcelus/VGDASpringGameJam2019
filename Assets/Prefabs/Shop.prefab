@@ -797,7 +797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: {fileID: 0}
-  display: {fileID: 3268756029520164645}
 --- !u!114 &3268756029520164645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1264,6 +1263,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '$1000
+  m_Text: 'Complete
 
 '

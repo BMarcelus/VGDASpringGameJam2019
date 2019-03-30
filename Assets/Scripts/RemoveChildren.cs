@@ -9,7 +9,7 @@ public class RemoveChildren : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        Debug.Log("test");
+        Debug.Log("this is attempting to remove the placed objects");
     }
 
     // Update is called once per frame
