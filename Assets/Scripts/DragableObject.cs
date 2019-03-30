@@ -14,6 +14,8 @@ public class DragableObject : MonoBehaviour
     void Start()
     {
         collider2d = GetComponent<Collider2D>();
+        gameObject.layer = 9;
+        // transform.localScale *= 0.5f;
     }
 
     // Update is called once per frame
@@ -39,6 +41,8 @@ public class DragableObject : MonoBehaviour
     public void StartDragging() {
       startPosition = transform.position;
       beingDragged = true;
+      // transform.localScale *= 2;
+
     }
 
     public void StopDragging() {
@@ -46,10 +50,13 @@ public class DragableObject : MonoBehaviour
       beingDragged = false;
       if(!inGrid) {
         transform.position = startPosition;
+        // transform.localScale *= 0.5f;
       } else {
       if(DebugManager.ClickDrag)Debug.Log("FINAL PLACEMENT", gameObject);
         mySpawner.Spawn();
-        collider2d.enabled = false;
+        // collider2d.enabled = false;
+        gameObject.layer = 0;
+        transform.position += Vector3.forward*2;
         this.enabled = false;
       }
     }

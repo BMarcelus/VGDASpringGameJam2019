@@ -7,9 +7,14 @@ public class ShapeColliders : MonoBehaviour
     public GameObject shapeCollider;
     public float prefabSize;
     public int prefabsCount;
+    private Vector2 size;
+    public Transform LowerRightCorner;
     // Start is called before the first frame update
     void Start()
     {
+        size = LowerRightCorner.transform.position - transform.position;
+        size.x = Mathf.Abs(size.x);
+        size.y = Mathf.Abs(size.y);
         AddPrefab();
         GetPrefabs();
     }
@@ -22,13 +27,20 @@ public class ShapeColliders : MonoBehaviour
 
     void AddPrefab()
     {
-        for(int i=0;i<10;i++)
+      float width = size.x / prefabSize;
+      float height = size.y / prefabSize;
+        for(int i = 0;i < width; i++)
         {
-            for(int j = 0; j < 10; j++)
+            for(int j = 0; j < height; j++)
             {
-                var gameShape = Instantiate(shapeCollider, transform.position + Vector3.right * j * prefabSize + Vector3.down * i * prefabSize, transform.rotation);
+              Vector3 position = transform.position;
+              position.x += i * prefabSize + prefabSize/2;
+              position.y -= j * prefabSize + prefabSize/2;
+                GameObject gameShape = Instantiate(shapeCollider, position, transform.rotation);
                 gameShape.transform.localScale *= prefabSize;
+                gameShape.transform.parent = transform;
                 prefabsCount += 1;
+                gameShape.layer = gameObject.layer;
             }
         }
     }
