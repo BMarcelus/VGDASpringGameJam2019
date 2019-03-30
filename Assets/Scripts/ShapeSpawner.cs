@@ -15,6 +15,6 @@ public class ShapeSpawner : MonoBehaviour
       GameObject shapeType = typeManager.GetRandomShape();
       myShape = Instantiate(shapeType, transform.position, shapeType.transform.rotation);
       myShape.GetComponent<DragableObject>().mySpawner = this;
-      myShape.transform.parent = SpawnedShapes.transform;
+      // myShape.transform.parent = SpawnedShapes.transform;
     }
 }

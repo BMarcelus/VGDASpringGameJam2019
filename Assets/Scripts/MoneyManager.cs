@@ -8,10 +8,11 @@ public class MoneyManager : MonoBehaviour
     public int triangle;
     public int square;
     public int polygon;
-    // Start is called before the first frame update
-    void Start()
+    AudioManager audioManager;
+    
+    private void Awake()
     {
-        
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -30,6 +31,7 @@ public class MoneyManager : MonoBehaviour
         if(money >= square)
         {
             money -= square;
+            audioManager.PlaySound("Purchase");
         }
     }
 
@@ -38,6 +40,7 @@ public class MoneyManager : MonoBehaviour
         if(money >= triangle)
         {
             money -= triangle;
+            audioManager.PlaySound("Purchase");
         }
     }
 
@@ -46,6 +49,7 @@ public class MoneyManager : MonoBehaviour
         if(money >= polygon)
         {
             money -= polygon;
+            audioManager.PlaySound("Purchase");
         }
     }
 }

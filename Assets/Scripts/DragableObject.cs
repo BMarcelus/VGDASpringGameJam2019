@@ -13,6 +13,7 @@ public class DragableObject : MonoBehaviour
     private bool startDrag;
     private float scale = 1.2f;
     private bool placed = false;
+    AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class DragableObject : MonoBehaviour
         startDrag = false;
         transform.localScale /= (1+scale)/2;
         // transform.localScale *= 0.5f;
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -34,7 +36,15 @@ public class DragableObject : MonoBehaviour
 
           float rotationInput = -Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100f;
           transform.Rotate(new Vector3(0,0,rotationInput));
-          if(Input.GetMouseButtonDown(0)&&!startDrag) {
+            if(rotationInput != 0)
+            {
+                audioManager.PlaySound("RotationSound");
+            }
+            else if (rotationInput == 0)
+            {
+                audioManager.StopSound("RotationSound");
+            }
+            if (Input.GetMouseButtonDown(0)&&!startDrag) {
             OnMouseDown();
           }
           startDrag = false;
@@ -48,6 +58,7 @@ public class DragableObject : MonoBehaviour
       if(!this.enabled)return;
       if(DebugManager.ClickDrag)Debug.Log("Clicked On", gameObject);
       ObjectManager.ObjectClicked(gameObject);
+        audioManager.PlaySound("ItemPlaced");
     }
 
     public void StartDragging() {
@@ -74,6 +85,7 @@ public class DragableObject : MonoBehaviour
         GameObject effect = Instantiate(mySpawner.typeManager.PlaceEffect, transform.position, Quaternion.identity);
         Destroy(effect,2);
         transform.position += Vector3.forward*2;
+        transform.parent = mySpawner.SpawnedShapes.transform;
         ObjectManager.HoverEffect.SetActive(false);
         placed = true;
         this.enabled = false;

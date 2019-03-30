@@ -6,7 +6,12 @@ public class Shop : MonoBehaviour
 {
     public MoneyManager money;
     public MoneyDisplay display;
+    AudioManager audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+    }
     public void AddMoney()
     {
         money.AddMoney();
