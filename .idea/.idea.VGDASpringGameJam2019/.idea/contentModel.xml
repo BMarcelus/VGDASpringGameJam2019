@@ -12,6 +12,7 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="CloseButton.cs" t="Include" />
           <e p="CollideCount.cs" t="Include" />
+          <e p="CreditsToMainMenu.cs" t="Include" />
           <e p="DebugManager.cs" t="Include" />
           <e p="DragableObject.cs" t="Include" />
           <e p="FadeAndDestroy.cs" t="Include" />
