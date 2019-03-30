@@ -26,4 +26,10 @@ public class CollideCount : MonoBehaviour
         collideShape = true;
         gameManager.AddCollide();
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        collideShape = false;
+        gameManager.SubtractCollide();
+    }
 }

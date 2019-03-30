@@ -21,4 +21,9 @@ public class Manager : MonoBehaviour
     {
         collisionCount += 1;
     }
+
+    public void SubtractCollide()
+    {
+        collisionCount -= 1;
+    }
 }
