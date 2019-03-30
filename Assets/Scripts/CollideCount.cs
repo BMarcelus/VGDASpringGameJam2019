@@ -30,6 +30,7 @@ public class CollideCount : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
       if(collision.tag == "TargetShape") {
+        if(!targetValue) gameManager.targetPositives += 1;
         targetValue = true;
       } else {
         collideShape += 1;
@@ -38,14 +39,17 @@ public class CollideCount : MonoBehaviour
       isCorrect = (collideShape>0) == targetValue;
       if(prevIsCorrect && !isCorrect) {
         gameManager.SubtractCollide();
+        if(!targetValue) gameManager.falsePositives += 1;
       } else if(!prevIsCorrect && isCorrect) {
         gameManager.AddCollide();
+        if(targetValue) gameManager.actualPositives += 1;
       }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
       if(collision.tag == "TargetShape") {
+        if(targetValue) gameManager.targetPositives -= 1;
         targetValue = false;
       } else {
         collideShape -= 1;
@@ -54,8 +58,10 @@ public class CollideCount : MonoBehaviour
       isCorrect = (collideShape>0) == targetValue;
       if(prevIsCorrect && !isCorrect) {
         gameManager.SubtractCollide();
+        if(targetValue) gameManager.actualPositives -= 1;
       } else if(!prevIsCorrect && isCorrect) {
         gameManager.AddCollide();
+        if(!targetValue) gameManager.falsePositives -= 1;
       }
     }
 }

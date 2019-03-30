@@ -36,12 +36,10 @@ public class DragableObject : MonoBehaviour
 
           float rotationInput = -Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100f;
           transform.Rotate(new Vector3(0,0,rotationInput));
-            if(rotationInput != 0)
-            {
+            if(rotationInput != 0) {
                 audioManager.PlaySound("RotationSound");
             }
-            else if (rotationInput == 0)
-            {
+            else {
                 audioManager.StopSound("RotationSound");
             }
             if (Input.GetMouseButtonDown(0)&&!startDrag) {
