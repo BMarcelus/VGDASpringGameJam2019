@@ -235,7 +235,8 @@ MonoBehaviour:
   music: Music
   inGame: Ingame
   credits: Credits
-  Finishing: finishing
+  Finishing: LevelComplete
+  purchase: Purchase
 --- !u!1 &334735589
 GameObject:
   m_ObjectHideFlags: 0
