@@ -9,13 +9,13 @@ public class UpgradeGenerate : MonoBehaviour
 {
     public UpgradeManager upgradeManager;
     public Text upgradeText;
-    public Text upgradeCost;
+    //public Text upgradeCost;
 
     // Start is called before the first frame update
     void Start()
     {
         upgradeText.text = ("Upgrade: x" + upgradeManager.click);
-        upgradeCost.text = ("$" + upgradeManager.cost);
+        //upgradeCost.text = ("$" + upgradeManager.cost);
     }
 
     // Update is called once per frame
@@ -25,6 +25,6 @@ public class UpgradeGenerate : MonoBehaviour
         upgradeManager.click += 1;
         upgradeManager.Upgrade();
         upgradeText.text = ("Upgrade: x" + upgradeManager.click);
-        upgradeCost.text = ("$" + upgradeManager.cost);
+        //upgradeCost.text = ("$" + upgradeManager.cost);
     }
 }

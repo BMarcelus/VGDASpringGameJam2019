@@ -8,10 +8,12 @@ public class UpgradeManager : MonoBehaviour
     public float cost;
     [Range(2, 20)]
     public int costMultiply;
+    Shop shop;
     // Start is called before the first frame update
     void Start()
     {
         click = 1;
+        shop = GameObject.Find("Shop").GetComponent<Shop>();
     }
 
     // Update is called once per frame
@@ -22,6 +24,6 @@ public class UpgradeManager : MonoBehaviour
 
     public void Upgrade()
     {
-        cost *= costMultiply;
+        shop.BuyUpgrade();
     }
 }
