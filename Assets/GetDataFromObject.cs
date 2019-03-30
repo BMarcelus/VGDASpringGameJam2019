@@ -20,7 +20,7 @@ public class GetDataFromObject : MonoBehaviour
     public void OnButtonClick()
     {
         Debug.Log("this is attempting to get data from the grid, the percent completed");
-        Debug.Log(Manager.percent);
+        Debug.Log(percent.percent);
         
 
 
