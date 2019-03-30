@@ -21,7 +21,7 @@ public class OutlineManager : MonoBehaviour
           timer -= Time.deltaTime;
         } else if(waiting) {
           selected = outlines[Random.Range(0,outlines.Length)];
-          selected.transform.position = Vector3.zero;
+          selected.transform.position = transform.position;
           selected.transform.Rotate(new Vector3(0,0, Random.Range(0, 360f)));
           waiting = false;
         }
@@ -31,6 +31,6 @@ public class OutlineManager : MonoBehaviour
       // selected.SetActive(false);
       selected.transform.position = Vector3.down * 100;
       waiting = true;
-      timer = 0.2f;
+      timer = 0.001f;
     }
 }

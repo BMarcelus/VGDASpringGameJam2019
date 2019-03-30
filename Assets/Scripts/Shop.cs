@@ -25,10 +25,12 @@ public class Shop : MonoBehaviour
     public Button rotationButton;
     public bool purchaseRotation;
     UpgradeManager upgradeManager;
+    UpgradeGenerate upgradeGenerate;
 
     private void Awake()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        upgradeGenerate = gameObject.GetComponent<UpgradeGenerate>();
         purchaseRotation = false;
     }
 
@@ -77,6 +79,7 @@ public class Shop : MonoBehaviour
         {
             money.money -= upgradeCost;
             upgradeCost *= costMultiply;
+            PurchaseUpgrade();
         }
     }
 
@@ -96,5 +99,9 @@ public class Shop : MonoBehaviour
     {
         purchaseRotation = true;
         rotationButton.interactable = false;
+    }
+    public void PurchaseUpgrade()
+    {
+        upgradeGenerate.Upgrade();
     }
 }
