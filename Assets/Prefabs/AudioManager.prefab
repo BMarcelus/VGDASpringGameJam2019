@@ -58,7 +58,7 @@ MonoBehaviour:
     RandomVolume: 0.2
     RandomTempo: 0.3
     loop: 0
-  - name: IntroMusic
+  - name: Music
     clip: {fileID: 8300000, guid: 8627a341906aa6347aeb691260e9e589, type: 3}
     volume: 0.6
     tempo: 1

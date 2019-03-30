@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//This will close the game
 public class CloseButton : MonoBehaviour
 {
     AudioManager audio;
