@@ -6,7 +6,7 @@ using UnityEngine.UI;
 //Reference: https://www.youtube.com/watch?v=GFNKjJ-I6rg
 //Reference https://answers.unity.com/questions/1253570/creating-a-tooltip-when-hovering-over-a-ui-button.html 
 public class UpgradeGenerate : MonoBehaviour
-{
+{ 
     public UpgradeManager upgradeManager;
     public Text upgradeText;
     //public Text upgradeCost;
