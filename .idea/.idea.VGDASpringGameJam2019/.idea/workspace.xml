@@ -57,22 +57,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BuildingList.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="257">
+              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
-                <marker date="1553978495392" expanded="false" signature="6:78" ph="..." />
-                <marker date="1553978495392" expanded="true" signature="121:1140" ph="{...}" />
-                <marker date="1553978495392" expanded="true" signature="449:1137" ph="{...}" />
-                <marker date="1553978495392" expanded="true" signature="464:522" ph="/* BuiltPercent.Add(percent); ... */" />
+                <marker date="1553982630232" expanded="true" signature="6:78" ph="..." />
+                <marker date="1553982630232" expanded="true" signature="121:1181" ph="{...}" />
+                <marker date="1553982630232" expanded="true" signature="491:1178" ph="{...}" />
+                <marker date="1553982630232" expanded="true" signature="506:564" ph="/* BuiltPercent.Add(percent); ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ReturnScreen.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
@@ -145,10 +145,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuToGameButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CloseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuToControls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/screenchanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreditsToMainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReturnScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingList.cs" />
       </list>
     </option>
   </component>
@@ -202,12 +202,12 @@
       <updated>1553922178740</updated>
       <workItem from="1553922226020" duration="3028000" />
       <workItem from="1553925788250" duration="5940000" />
-      <workItem from="1553957986566" duration="10695000" />
+      <workItem from="1553957986566" duration="11160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19663000" />
+    <option name="totallyTimeSpent" value="20128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,19 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BuildingList.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <marker date="1553978495392" expanded="false" signature="6:78" ph="..." />
-            <marker date="1553978495392" expanded="true" signature="121:1140" ph="{...}" />
-            <marker date="1553978495392" expanded="true" signature="449:1137" ph="{...}" />
-            <marker date="1553978495392" expanded="true" signature="464:522" ph="/* BuiltPercent.Add(percent); ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CloseButton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -389,6 +376,19 @@
             <marker date="1553982033048" expanded="true" signature="450:655" ph="{...}" />
             <marker date="1553982033048" expanded="true" signature="685:741" ph="{...}" />
             <marker date="1553982033048" expanded="true" signature="772:825" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BuildingList.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <marker date="1553982630232" expanded="true" signature="6:78" ph="..." />
+            <marker date="1553982630232" expanded="true" signature="121:1181" ph="{...}" />
+            <marker date="1553982630232" expanded="true" signature="491:1178" ph="{...}" />
+            <marker date="1553982630232" expanded="true" signature="506:564" ph="/* BuiltPercent.Add(percent); ... */" />
           </folding>
         </state>
       </provider>
