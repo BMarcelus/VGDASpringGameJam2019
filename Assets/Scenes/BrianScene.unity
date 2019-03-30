@@ -5399,6 +5399,7 @@ GameObject:
   - component: {fileID: 2126877307}
   - component: {fileID: 2126877306}
   - component: {fileID: 2126877305}
+  - component: {fileID: 2126877309}
   m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
@@ -5438,7 +5439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeCollider: {fileID: 418332535792054139, guid: 0f7c95f847e509a478ce9d722fb628a6,
     type: 3}
-  prefabSize: 0.5
+  prefabSize: 0.4
   prefabsCount: 0
   LowerRightCorner: {fileID: 1493450666}
 --- !u!212 &2126877307
@@ -5504,6 +5505,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2126877309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126877304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed035854834074068920fef2e5d0e0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetTime: 0
+  positiveEffect: {fileID: 407757390380730896, guid: 525260ad8cc6741a6b5cee1ab2a0dcc4,
+    type: 3}
+  negativeEffect: {fileID: 5780005130169714584, guid: 3f280940db96245bbb50599629e02607,
+    type: 3}
 --- !u!1 &2146548989
 GameObject:
   m_ObjectHideFlags: 0
