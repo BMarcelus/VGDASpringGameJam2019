@@ -49,14 +49,14 @@ MonoBehaviour:
     volume: 1
     tempo: 1
     RandomVolume: 0
-    RandomTempo: 0
+    RandomTempo: 0.1
     loop: 0
   - name: UIClick
     clip: {fileID: 8300000, guid: 8225a7961bf378740a26e831354f134a, type: 3}
-    volume: 0.3
+    volume: 0.5
     tempo: 1
     RandomVolume: 0.2
-    RandomTempo: 0
+    RandomTempo: 0.3
     loop: 0
   - name: IntroMusic
     clip: {fileID: 8300000, guid: 8627a341906aa6347aeb691260e9e589, type: 3}
