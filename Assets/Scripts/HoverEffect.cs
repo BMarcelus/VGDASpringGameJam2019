@@ -9,10 +9,4 @@ public class HoverEffect : MonoBehaviour
     {
         ObjectManager.HoverEffect = gameObject;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

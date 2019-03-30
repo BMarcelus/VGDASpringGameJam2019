@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class DragableObject : MonoBehaviour
 {
+    public ShapeSpawner mySpawner;
 
     private bool beingDragged = false;
     private bool inGrid = false;
-    private BoxCollider2D boxCollider;
+    private Collider2D collider2d;
     private Vector3 startPosition;
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        collider2d = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -27,10 +28,10 @@ public class DragableObject : MonoBehaviour
           float rotationInput = -Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100f;
           transform.Rotate(new Vector3(0,0,rotationInput));
         }
-        
     }
 
     void OnMouseDown() {
+      if(!this.enabled)return;
       if(DebugManager.ClickDrag)Debug.Log("Clicked On", gameObject);
       ObjectManager.ObjectClicked(gameObject);
     }
@@ -47,6 +48,8 @@ public class DragableObject : MonoBehaviour
         transform.position = startPosition;
       } else {
       if(DebugManager.ClickDrag)Debug.Log("FINAL PLACEMENT", gameObject);
+        mySpawner.Spawn();
+        collider2d.enabled = false;
         this.enabled = false;
       }
     }
