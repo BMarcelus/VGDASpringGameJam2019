@@ -168,20 +168,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CreditsToMainMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+            <state relative-caret-position="246">
+              <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
               <folding>
-                <marker date="1553986766317" expanded="false" signature="6:113" ph="..." />
-                <marker date="1553986766317" expanded="true" signature="161:1450" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="624:721" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="754:876" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="906:962" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="993:1046" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="1071:1122" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="1148:1200" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="1227:1280" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="1311:1366" ph="{...}" />
-                <marker date="1553986766317" expanded="true" signature="1394:1448" ph="{...}" />
+                <marker date="1553988531294" expanded="false" signature="6:113" ph="..." />
+                <marker date="1553988531294" expanded="true" signature="161:1471" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="635:732" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="765:887" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="917:973" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="1004:1057" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="1082:1133" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="1159:1211" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="1238:1291" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="1324:1383" ph="{...}" />
+                <marker date="1553988531294" expanded="true" signature="1413:1469" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -271,12 +271,12 @@
       <updated>1553922178740</updated>
       <workItem from="1553922226020" duration="3028000" />
       <workItem from="1553925788250" duration="5940000" />
-      <workItem from="1553957986566" duration="13570000" />
+      <workItem from="1553957986566" duration="14844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22538000" />
+    <option name="totallyTimeSpent" value="23812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,20 +516,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CreditsToMainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        <state relative-caret-position="246">
+          <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
           <folding>
-            <marker date="1553986766317" expanded="false" signature="6:113" ph="..." />
-            <marker date="1553986766317" expanded="true" signature="161:1450" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="624:721" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="754:876" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="906:962" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="993:1046" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="1071:1122" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="1148:1200" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="1227:1280" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="1311:1366" ph="{...}" />
-            <marker date="1553986766317" expanded="true" signature="1394:1448" ph="{...}" />
+            <marker date="1553988531294" expanded="false" signature="6:113" ph="..." />
+            <marker date="1553988531294" expanded="true" signature="161:1471" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="635:732" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="765:887" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="917:973" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="1004:1057" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="1082:1133" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="1159:1211" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="1238:1291" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="1324:1383" ph="{...}" />
+            <marker date="1553988531294" expanded="true" signature="1413:1469" ph="{...}" />
           </folding>
         </state>
       </provider>
