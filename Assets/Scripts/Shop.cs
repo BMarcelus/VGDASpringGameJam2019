@@ -23,15 +23,6 @@ public class Shop : MonoBehaviour
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
-    private void Update()
-    {
-        money.money += Time.deltaTime*complete / 100;
-    }
-
-    public void AddMoney()
-    {
-        complete += add;
-    }
 
     public void BuySquare()
     {
