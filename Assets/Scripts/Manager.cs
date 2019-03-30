@@ -14,9 +14,10 @@ public class Manager : MonoBehaviour
     public int falsePositives;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         shapeColliders = GetComponent<ShapeColliders>();
+        Debug.Log(shapeColliders, gameObject);
     }
 
     // Update is called once per frame

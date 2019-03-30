@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BuildingList : MonoBehaviour
 {
+    public MoneyIncome currencyPerSecond;
     public GameObject builtbuilding;
     public GameObject spawnedShapes;
     public Manager manager;
@@ -23,8 +24,8 @@ public class BuildingList : MonoBehaviour
         //
         Debug.Log(spawnedShapes.transform.childCount);
 
-        float moneygernationrate = ((fillPercent * 150) - ((overflowPercent *100) + spawnedShapes.transform.childCount / 4) / 10;
-        Debug.Log(moneygernationrate);
+        float currencyPerSecond = ((fillPercent * 150) - ((overflowPercent * 100) + spawnedShapes.transform.childCount / 4) / 10);
+        Debug.Log(currencyPerSecond);
         Debug.Log("this is the money you make per second");
         // BuiltPercent.Add()
         Instantiate(builtbuilding);
