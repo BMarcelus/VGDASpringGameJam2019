@@ -26,8 +26,8 @@ public class BuildingList : MonoBehaviour
 
         Debug.Log(spawnedShapes.transform.childCount);
         Debug.Log("this is the shapes you used");
-
-        float currencyPerSecond = ((fillPercent * 150) - ((overflowPercent * 100) + spawnedShapes.transform.childCount / 4) / 10);
+        //float currencyPerSecond = (spawnedShapes.transform.childCount);
+        float currencyPerSecond = (fillPercent * (fillPercent * 105)) - ((overflowPercent * spawnedShapes.transform.childCount));
         Debug.Log(currencyPerSecond);
         Debug.Log("this is the money you make per second");
         spawn(currencyPerSecond); 

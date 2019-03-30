@@ -18,9 +18,9 @@ public class CreditsToMainMenu : MonoBehaviour
     [SerializeField]
     string credits = "Credits";
     [SerializeField]
-    string Finishing = "finishsound";
+    string levelcomplete = "LevelComplete";
     [SerializeField]
-    string purchase = "Purchase";
+    string itemplaced = "ItemPlaced"; 
     
     void Start()
     {
@@ -58,13 +58,13 @@ public class CreditsToMainMenu : MonoBehaviour
         audioManager.PlaySound(credits);
     }
 
-    public void finishsound()
+    public void LevelComplete()
     {
-        audioManager.PlaySound(Finishing);
+        audioManager.PlaySound(levelcomplete);
     }
 
-    public void Purchase()
+    public void ItemPlaced()
     {
-        audioManager.PlaySound(purchase);
+        audioManager.PlaySound(itemplaced);
     }
 }
