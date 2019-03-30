@@ -295,9 +295,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 10000
+  complete: 0
+  add: 50
   triangle: 500
   square: 1000
   polygon: 2500
+  display: {fileID: 0}
 --- !u!4 &1730813276
 Transform:
   m_ObjectHideFlags: 0
@@ -506,6 +509,13 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1730813275}
+    - target: {fileID: 3268756030126297978, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Complete
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
 --- !u!1001 &3432815485936672664
@@ -519,6 +529,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoneyManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432815486522163907, guid: 9fa3c955daacc494d99a7af1f626b76f,
+        type: 3}
+      propertyPath: complete
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432815486522163907, guid: 9fa3c955daacc494d99a7af1f626b76f,
+        type: 3}
+      propertyPath: add
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3432815486522163908, guid: 9fa3c955daacc494d99a7af1f626b76f,
         type: 3}

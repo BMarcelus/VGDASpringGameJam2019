@@ -83,7 +83,7 @@ public class DragableObject : MonoBehaviour
         GameObject effect = Instantiate(mySpawner.typeManager.PlaceEffect, transform.position, Quaternion.identity);
         Destroy(effect,2);
         transform.position += Vector3.forward*2;
-        transform.parent = mySpawner.SpawnedShapes.transform;
+        transform.parent = mySpawner.typeManager.SpawnedShapes.transform;
         ObjectManager.HoverEffect.SetActive(false);
         placed = true;
         this.enabled = false;
