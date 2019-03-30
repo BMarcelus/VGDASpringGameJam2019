@@ -58,3 +58,31 @@ MonoBehaviour:
     RandomVolume: 0.2
     RandomTempo: 0
     loop: 0
+  - name: IntroMusic
+    clip: {fileID: 8300000, guid: 8627a341906aa6347aeb691260e9e589, type: 3}
+    volume: 0.6
+    tempo: 1
+    RandomVolume: 0
+    RandomTempo: 0
+    loop: 1
+  - name: ItemPlaced
+    clip: {fileID: 8300000, guid: 8225a7961bf378740a26e831354f134a, type: 3}
+    volume: 0.3
+    tempo: 1
+    RandomVolume: 0.2
+    RandomTempo: 0
+    loop: 0
+  - name: LevelComplete
+    clip: {fileID: 8300000, guid: 6634a7e404283b34aa298cbd25a5a578, type: 3}
+    volume: 0.3
+    tempo: 1
+    RandomVolume: 0
+    RandomTempo: 0
+    loop: 0
+  - name: RotationSound
+    clip: {fileID: 8300000, guid: ba433223701f9e7489c88bc35b96ad16, type: 3}
+    volume: 0.4
+    tempo: 1
+    RandomVolume: 0
+    RandomTempo: 0.5
+    loop: 1

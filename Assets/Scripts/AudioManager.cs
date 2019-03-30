@@ -31,6 +31,7 @@ public class Sound
         source.pitch = tempo * (1 + Random.Range(-RandomTempo / 2f, RandomTempo / 2f));         // tempo control with random tempo fluctuation 
 
         source.Play();                                                                          // plays sound
+        
     }
 
     public void Stop()
@@ -74,6 +75,13 @@ public class AudioManager : MonoBehaviour
         }
 
         PlaySound("Music");
+    }
+
+    void update()
+    {
+        if (Input.GetMouseButton(0));
+        {
+        }
     }
 
     public void PlaySound(string _name)
