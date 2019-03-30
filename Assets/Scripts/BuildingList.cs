@@ -23,7 +23,7 @@ public class BuildingList : MonoBehaviour
         //
         Debug.Log(spawnedShapes.transform.childCount);
 
-        float moneygernationrate = ((fillPercent * 150) - ((overflowPercent *100) + spawnedShapes.transform.childCount / 4) / 10;
+        float moneygernationrate = ((fillPercent * 150) - ((overflowPercent *100) + spawnedShapes.transform.childCount / 4) / 10);
         Debug.Log(moneygernationrate);
         Debug.Log("this is the money you make per second");
         // BuiltPercent.Add()
