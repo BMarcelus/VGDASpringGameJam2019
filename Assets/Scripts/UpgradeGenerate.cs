@@ -25,6 +25,6 @@ public class UpgradeGenerate : MonoBehaviour
         upgradeManager.click += 1;
         upgradeManager.Upgrade();
         upgradeText.text = ("Upgrade: x" + upgradeManager.click);
-        upgradeCost.text = ("$" + upgradeManager.cost);
+        //upgradeCost.text = ("$" + upgradeManager.cost);
     }
 }

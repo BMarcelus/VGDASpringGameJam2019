@@ -16,7 +16,8 @@ public class MoneyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        money.ToString("F2");
+        //CHeck MoneyIncome Script
         display.MoneyUpdate();
+        //money.ToString("F2");
     }
 }
