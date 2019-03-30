@@ -261,10 +261,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1727953005342681094, guid: f92cbf4abe4762d41b576f0a2597f2e2,
-        type: 3}
-      propertyPath: sounds.Array.data[2].name
-      value: Music
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f92cbf4abe4762d41b576f0a2597f2e2, type: 3}

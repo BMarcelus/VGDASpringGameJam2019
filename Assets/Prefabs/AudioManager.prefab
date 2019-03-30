@@ -60,7 +60,7 @@ MonoBehaviour:
     loop: 0
   - name: Music
     clip: {fileID: 8300000, guid: 8627a341906aa6347aeb691260e9e589, type: 3}
-    volume: 0.6
+    volume: 0.25
     tempo: 1
     RandomVolume: 0
     RandomTempo: 0
@@ -85,4 +85,11 @@ MonoBehaviour:
     tempo: 1
     RandomVolume: 0
     RandomTempo: 0.5
-    loop: 1
+    loop: 0
+  - name: HoverSound
+    clip: {fileID: 8300000, guid: 2b67f97f6f9bb77428fa970c4696cb83, type: 3}
+    volume: 0.4
+    tempo: 1
+    RandomVolume: 0
+    RandomTempo: 0.5
+    loop: 0
