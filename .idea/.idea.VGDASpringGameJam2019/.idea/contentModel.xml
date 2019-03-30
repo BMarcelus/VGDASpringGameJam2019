@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="BuildingList.cs" t="Include" />
           <e p="CloseButton.cs" t="Include" />
           <e p="CollideCount.cs" t="Include" />
           <e p="CreditsToMainMenu.cs" t="Include" />
@@ -19,6 +20,7 @@
           <e p="HoverEffect.cs" t="Include" />
           <e p="MainMenuToGameButton.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
+          <e p="MenuToControls.cs" t="Include" />
           <e p="MoneyDisplay.cs" t="Include" />
           <e p="MoneyManager.cs" t="Include" />
           <e p="ObjectManager.cs" t="Include" />
@@ -29,6 +31,8 @@
           <e p="ShapeSpawner.cs" t="Include" />
           <e p="ShapeTypeManager.cs" t="Include" />
           <e p="Shop.cs" t="Include" />
+          <e p="UpgradeGenerate.cs" t="Include" />
+          <e p="UpgradeManager.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
