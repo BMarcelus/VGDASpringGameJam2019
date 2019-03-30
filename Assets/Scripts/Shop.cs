@@ -18,10 +18,13 @@ public class Shop : MonoBehaviour
     public Button triangleButton;
     public Button squareButton;
     public Button polygonButton;
+    public Button rotationButton;
+    public bool purchaseRotation;
 
     private void Awake()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        purchaseRotation = false;
     }
 
     public void BuySquare()
@@ -66,5 +69,10 @@ public class Shop : MonoBehaviour
     public void PurchasePolygon()
     {
         polygonButton.interactable = false;
+    }
+    public void PurchaseRotation()
+    {
+        purchaseRotation = true;
+        rotationButton.interactable = false;
     }
 }

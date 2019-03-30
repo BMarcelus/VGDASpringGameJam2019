@@ -14,6 +14,7 @@ public class DragableObject : MonoBehaviour
     private float scale = 1.2f;
     private bool placed = false;
     AudioManager audioManager;
+    Shop shop;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class DragableObject : MonoBehaviour
         transform.localScale /= (1+scale)/2;
         // transform.localScale *= 0.5f;
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        shop = GameObject.Find("Shop").GetComponent<Shop>();
     }
 
     // Update is called once per frame
@@ -34,13 +36,18 @@ public class DragableObject : MonoBehaviour
           pz.z = 0;
           transform.position = pz;
 
-          float rotationInput = -Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100f;
-          transform.Rotate(new Vector3(0,0,rotationInput));
-            if(rotationInput != 0) {
-                audioManager.PlaySound("RotationSound");
-            }
-            else {
-                audioManager.StopSound("RotationSound");
+            if (shop.purchaseRotation)
+            {
+                float rotationInput = -Input.GetAxisRaw("Horizontal") * Time.deltaTime * 100f;
+                transform.Rotate(new Vector3(0, 0, rotationInput));
+                if (rotationInput != 0)
+                {
+                    audioManager.PlaySound("RotationSound");
+                }
+                else
+                {
+                    audioManager.StopSound("RotationSound");
+                }
             }
             if (Input.GetMouseButtonDown(0)&&!startDrag) {
             OnMouseDown();
