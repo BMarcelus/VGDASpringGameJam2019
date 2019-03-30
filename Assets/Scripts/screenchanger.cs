@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor.SceneManagement;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class screenchanger : MonoBehaviour
+public class screenchanger: MonoBehaviour
 {
-    public void screenchange()
+    public void ChangScreen()
     {
-        SceneManager.LoadScene("ScreenSwitchTest");
+        SceneManager.LoadScene("ScreenSwitchTest",LoadSceneMode.Single);
 
     }
 }
