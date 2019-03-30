@@ -9,6 +9,9 @@ public class Shop : MonoBehaviour
     public float square;
     public float polygon;
     public float rotationCost;
+    public float upgradeCost;
+    [Range(2, 20)]
+    public int costMultiply;
     public float add;
     public float complete;
     public MoneyManager money;
@@ -70,10 +73,10 @@ public class Shop : MonoBehaviour
 
     public void BuyUpgrade()
     {
-        if (money.money >= upgradeManager.cost)
+        if (money.money >= upgradeCost)
         {
-            money.money -= upgradeManager.cost;
-            upgradeManager.cost *= upgradeManager.costMultiply;
+            money.money -= upgradeCost;
+            upgradeCost *= costMultiply;
         }
     }
 

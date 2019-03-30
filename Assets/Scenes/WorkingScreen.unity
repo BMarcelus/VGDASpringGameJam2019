@@ -767,6 +767,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552396004}
   m_CullTransparentMesh: 0
+--- !u!114 &634891054 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1867751232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef537d40ba9435459fa453d38a5f8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &663614325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1889,21 @@ PrefabInstance:
       propertyPath: SpawnerBuy2
       value: 
       objectReference: {fileID: 1312695764}
+    - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: rotationCost
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: upgradeCost
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3268756029520164644, guid: fff722c089e2b3348be8b3c7e29d5c0d,
+        type: 3}
+      propertyPath: costMultiply
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3268756029520164645, guid: fff722c089e2b3348be8b3c7e29d5c0d,
         type: 3}
       propertyPath: manager
@@ -2011,10 +2038,6 @@ PrefabInstance:
       propertyPath: upgradeManager
       value: 
       objectReference: {fileID: 1547771903}
-    - target: {fileID: 1180840880, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 2088747574, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
@@ -2042,6 +2065,50 @@ PrefabInstance:
     - target: {fileID: 2088747574, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088747575, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuyUpgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 2088747575, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 634891054}
+    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180840880, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699812958, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -68.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699812958, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 142.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699812958, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 92.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699812958, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699812956, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322423475, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1125314145, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2071,21 +2138,13 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 45
+    - target: {fileID: 1125314147, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuyRotation
       objectReference: {fileID: 0}
-    - target: {fileID: 1180840879, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 49
-      objectReference: {fileID: 0}
-    - target: {fileID: 1322423475, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1699812956, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
-      propertyPath: m_Text
-      value: 
+    - target: {fileID: 1125314146, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: $200, Rotate shape with "A" and "D" or arrow keys
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff722c089e2b3348be8b3c7e29d5c0d, type: 3}
