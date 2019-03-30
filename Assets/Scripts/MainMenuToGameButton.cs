@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class MainMenuToGameButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SceneLoader : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("ScreenSwitchTest");
+            }
+        }
     }
 }
