@@ -100,3 +100,10 @@ MonoBehaviour:
     RandomVolume: 0
     RandomTempo: 0
     loop: 1
+  - name: Ingame
+    clip: {fileID: 8300000, guid: da8e192a6f78d3f4ebceaadc797c96c5, type: 3}
+    volume: 0.2
+    tempo: 1
+    RandomVolume: 0
+    RandomTempo: 0.25
+    loop: 1
