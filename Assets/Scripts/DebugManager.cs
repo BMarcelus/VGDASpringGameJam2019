@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class DebugManager : ScriptableObject
 {
-  public static bool ClickDrag = true;
-  public static bool Collisions = true;
+  public static bool ClickDrag = false;
+  public static bool Collisions = false;
 }
