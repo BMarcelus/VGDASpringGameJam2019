@@ -22,6 +22,7 @@
           <e p="Manager.cs" t="Include" />
           <e p="MenuToControls.cs" t="Include" />
           <e p="MoneyDisplay.cs" t="Include" />
+          <e p="MoneyIncome.cs" t="Include" />
           <e p="MoneyManager.cs" t="Include" />
           <e p="ObjectManager.cs" t="Include" />
           <e p="RemoveChildren.cs" t="Include" />
